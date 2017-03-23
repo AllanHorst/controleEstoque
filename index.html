@@ -1,17 +1,66 @@
 <!DOCTYPE html>
-<html ng-app="mainApp">
+<html>
 <head>
-	<link rel="stylesheet" type="text/css" href="style.css">
-	
-	<!-- Js files -->
-	<script type="text/javascript" src="angular/angular-1.4.8.js"></script>
-	<script type="text/javascript" src="script.js"></script>
-
 	<meta charset="utf-8">
-
-	<title>Controle estoque</title>
+	<title>PEPS, UEPS, MÉDIA</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
-<body ng-controller="MainController">
-	{{teste}}
+<body>
+	<table>
+		<thead>
+			<tr class="inputs">
+				<th colspan="10">Inputs:</th>
+			</tr>
+			<tr class="inputs">
+				<th class="data">
+					<input type="text" name="data" placeholder="Data">
+				</th>
+				<th class="in" colspan="3">
+					<input type="radio" name="type" value="compra">Compra
+					<input type="radio" name="type" value="venda">Venda
+				</th>
+				<th class="out" colspan="3">
+					<input type="number" name="un" placeholder="Unidades">
+				</th>
+				<th class="stock" colspan="3">
+					<input type="number" name="price" placeholder="Preço">
+				</th>
+			</tr>
+			<tr class="top">
+				<th class="data"></th>
+				<th class="in" colspan="3">ENTRADAS</th>
+				<th class="out" colspan="3">SAÍDAS</th>
+				<th class="stock" colspan="3">SALDO</th>
+			</tr>
+			<tr>
+				<th class="data">DATA</th>
+				<th class="in">QTD</th>
+				<th class="in">UNT</th>
+				<th class="in">TOT</th>
+				<th class="out">QTD</th>
+				<th class="out">UNT</th>
+				<th class="out">TOT</th>
+				<th class="stock">QTD</th>
+				<th class="stock">UNT</th>
+				<th class="stock">TOT</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<th class="data">01/12</th>
+				<th class="in">1000</th>
+				<th class="in">30</th>
+				<th class="in">3000</th>
+				<th class="out"></th>
+				<th class="out"></th>
+				<th class="out"></th>
+				<th class="stock">1000</th>
+				<th class="stock">30</th>
+				<th class="stock">3000</th>
+			</tr>
+		</tbody>
+	</table>
+	<div class="bg"></div>
 </body>
+	<script src="script.js"></script>
 </html>

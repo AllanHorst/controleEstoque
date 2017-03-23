@@ -1,0 +1,97 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+.bg{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 50vh;
+	background: #303F9F;
+}
+
+.inputs th{
+	background: #F5F5F5 !important;
+	color: #212121;
+}
+table{
+	border-collapse: collapse;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	box-shadow: 0 0 50px rgba(0,0,0,0.26);
+	z-index: 1;
+}
+.top{
+	border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+thead{
+	color: white;
+}
+thead .data{
+	background: #3949AB;
+}
+thead .in{
+	background: #303F9F;
+}
+thead .out{
+	background: #3949AB;
+}
+thead .stock{
+	background: #303F9F;
+}
+
+tbody{
+	color: #212121;
+}
+tbody tr:nth-child(odd) .data{
+	background: #F5F5F5;
+}
+tbody tr:nth-child(odd) .in{
+	background: #EEEEEE;
+}
+tbody tr:nth-child(odd) .out{
+	background: #F5F5F5;
+}
+tbody tr:nth-child(odd) .stock{
+	background: #EEEEEE;
+}
+
+tbody tr:nth-child(even) .data{
+	background: #EEEEEE;
+}
+tbody tr:nth-child(even) .in{
+	background: #E0E0E0;
+}
+tbody tr:nth-child(even) .out{
+	background: #EEEEEE;
+}
+tbody tr:nth-child(even) .stock{
+	background: #E0E0E0;
+}
+
+th{
+	padding: 15px 30px;
+}
+
+input[type=number], input[type=text]{
+	background: none;
+	border: none;
+	outline: none;
+	font-size: 1em;
+}
+input[type=text]{
+	width: 50px;
+}
+input[type=radio]:nth-child(2){
+	margin-left: 30px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
